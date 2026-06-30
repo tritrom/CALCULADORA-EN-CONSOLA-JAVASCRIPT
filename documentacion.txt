@@ -1,0 +1,63 @@
+DOCUMENTACION TECNICA - CALCULADORA JAVASCRIPT
+==============================================
+
+1. DESCRIPCION
+   Aplicacion de consola en JavaScript que permite realizar
+   operaciones matematicas basicas (suma, resta, multiplicacion
+   y division) desde la consola del navegador.
+
+2. ESTRUCTURA DEL CODIGO
+
+   - Variables: Se usan let.
+     * historial: arreglo que almacena las operaciones realizadas.
+
+   - Funciones:
+     * sumar(a, b)       - Retorna a + b
+     * restar(a, b)      - Retorna a - b
+     * multiplicar(a, b) - Retorna a * b
+     * dividir(a, b)     - Retorna a / b
+       - Si b es 0: muestra "Error" en consola y alert()
+     * calculadora()     - Modo interactivo con prompt()
+       - Si la entrada no es valida: muestra alert() de error
+
+   - Arreglos:
+     * historial: guarda cada operacion como string con push().
+
+3. CONCEPTOS APLICADOS
+
+   - Variables (let)
+   - Funciones con parametros y retorno
+   - Condicionales (if)
+   - Arreglos y metodo push()
+   - console.log() para salida en consola
+   - prompt() para entrada de datos
+   - alert() para errores (division por cero, entrada invalida)
+
+4. MANEJO DE ERRORES
+
+   - Division por cero: alert("!Error! revisar y reintentar.")
+   - Entrada no numerica en calculadora(): alert("!Error! revisar y reintentar.")
+
+5. COMO EJECUTAR
+
+   1) Abrir index.html en el navegador
+   2) Presionar F12 -> pestana Consola
+   3) Escribir funciones directamente o usar calculadora()
+
+6. EJEMPLOS DE USO
+
+   > sumar(8, 3)
+   8 + 3 = 11
+
+   > restar(10, 4)
+   10 - 4 = 6
+
+   > dividir(5, 0)
+   Error: No se puede dividir por cero
+   (aparece alert: "!Error! revisar y reintentar.")
+
+   > historial
+   ["8 + 3 = 11", "10 - 4 = 6"]
+
+   > calculadora()
+   (modo interactivo con ventanas emergentes)
